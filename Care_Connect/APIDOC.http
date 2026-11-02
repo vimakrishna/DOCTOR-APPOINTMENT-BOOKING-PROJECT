@@ -1,0 +1,53 @@
+###
+GET http://127.0.0.1:8000/api/doctors/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/doctors/
+Content-Type: application/json
+
+{
+    "Doctor_name":"Varun",
+    "Specialization":"pyschology",
+    "Experience":7,
+    "Hospital":"Beliveres",
+    "Consultation_fee":1200,
+    "Available":"True"
+}
+
+###
+GET http://127.0.0.1:8000/api/doctors/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/api/doctors/1/
+Content-Type: application/json
+
+{
+  "Doctor_name": "Anurenj",
+  "Specialization": "Cardiology",
+  "Experience": 10,
+  "Hospital": "Lakshore",
+  "Consultation_fee": 1500,
+  "Available": true
+}
+
+###
+DELETE http://127.0.0.1:8000/api/doctors/2/
+
+###
+GET http://127.0.0.1:8000/api/appoinment/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/api/appoinment/
+Content-Type: application/json
+
+{
+  "Patient_name":"Adhiyan",
+  "Phone":9847082871,
+  "Doctor_id":1,
+  "Appointment_date":"2026-11-02",
+  "Problem":"Fever"
+}
+
